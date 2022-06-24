@@ -1,0 +1,23 @@
+{
+  "name": "@avcs/memo",
+  "version": "1.0.1",
+  "description": "memoize map",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avcs06/mmemo.git"
+  },
+  "author": "AvcS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avcs06/mmemo/issues"
+  },
+  "homepage": "https://github.com/avcs06/mmemo#readme",
+  "keywords": [
+    "memoize",
+    "map"
+  ]
+}
