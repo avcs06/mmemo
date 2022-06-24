@@ -4,9 +4,6 @@ interface MemoizeOptions {
   onlyOnce?: boolean
 }
 
-interface MemoizedFunction extends Function {
-  [MEMOIZED]: MemoizedFunction;
-  reset: () => void
-}
+type MemoizedFunction<T> = T & { reset: () => void }
 
-export type Memoize = (fn: Function, options?: MemoizeOptions) => MemoizedFunction
+export type Memoize<T extends Function> = (fn: T, options?: MemoizeOptions) => MemoizedFunction<T>
