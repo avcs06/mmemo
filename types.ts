@@ -4,6 +4,10 @@ interface MemoizeOptions {
   onlyOnce?: boolean
 }
 
-type MemoizedFunction<T> = T & { reset: () => void }
+type AnyFunction = (...args: any[]) => any
 
-export type Memoize<T extends Function> = (fn: T, options?: MemoizeOptions) => MemoizedFunction<T>
+export type MemoizedFunction<T extends AnyFunction> = T & { reset: () => void }
+
+export interface Memoize {
+  <T extends AnyFunction>(fn: T, options?: MemoizeOptions): MemoizedFunction<T>
+}
