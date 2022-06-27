@@ -1,6 +1,6 @@
 {
   "name": "@avcs/memo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "memoize map",
   "main": "index.ts",
   "scripts": {
